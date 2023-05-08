@@ -374,6 +374,7 @@ border-color: var(--hover-focus);}
   color: var(--secondary-background);
 }
 .footer {
+  max-width: 1440px;
   background: var(--secondary-color);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -405,6 +406,7 @@ border-color: var(--hover-focus);}
   align-items: center;
   gap: 16px;
 }
+
 .link-footer-social-list{
   width: 40px;
   height: 40px;
@@ -422,6 +424,59 @@ border-color: var(--hover-focus);}
 .link-footer-social-list:focus{
   background-color: var(--secondary-hover-focus);
 }
+.subscribe-form {
+  margin-left: 80px; 
+}
+.useremail-input {
+  min-width: 264px;
+  min-height: 40px;
+  border: 1px solid var(--primary-background);
+  background-color: var(--secondary-color);
+  padding: 8px  16px;
+  border-radius: 4px;
+  color: var(--primary-background);
+  transition: border-color var(--transition);
+}
+.useremail-input::placeholder{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    color: var(--primary-background);
+}
+.subscribe-container{
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+.useremail-input:focus{
+  border-color: var(--hover-focus);
+  outline: none;
+}
+.subscribe-button{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 165px;
+  padding: 8px 24px;
+  background-color: var(--iris);
+  color: var(--primary-background);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: background-colol var(--transition);
+}
+.subscribe-button:hover,
+.subscribe-button:focus{
+  background-color: var(--hover-focus);
+}
+.subscribe-icon{
+  fill: var(--primary-background);
+}
+
 /* ====portfolio==== */
 .button-portfolio {
   font-family: "Roboto", sans-serif;
@@ -580,3 +635,141 @@ border-color: var(--hover-focus);}
   opacity: 0;
   pointer-events: none;
 }
+.wrap-modal-icon{
+  position: relative;
+}
+.icon-contact{
+  position: absolute;
+  left: 16px;
+  top: 8px;
+}
+.modal-form{
+  padding: 70px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.title-modal{
+  font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;  
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+}
+.text-modal{
+  display: block;
+  font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:var(--icon-color);
+}
+.modal-form-input{
+  width: 100%;
+  padding: 8px 38px;
+  margin-bottom: 8px;
+  transition: border-color var(--transition);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+.modal-form-input:focus{
+  border-color: var(--iris);
+  outline: none;
+}
+.icon-contact{
+  fill:var(--secondary-color);
+  transition: fill var(--transition);
+}
+.modal-form-input:focus+.icon-contact{
+  fill: var(--iris); 
+}
+.modal-form-message{
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  transition: border-color var(--transition);
+  padding: 8px 16px;
+}
+.modal-form-message:focus
+{border-color: var(--iris);
+ outline: none;
+}
+.modal-form-message::placeholder{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color:rgba(46, 47, 66, 0.4);
+}
+.modal-checkbox::before{
+  content:'' ;
+  display: block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.modal-checkbox{
+  position: relative;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color:  var(--icon-color);
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 24px;
+}
+.icon-agree{
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: var(--primary-background);
+  transition: fill var(--transition);
+}
+.hidden-checkbox:focus+.modal-checkbox::before{
+  background-color: var(--iris);
+}
+.hidden-checkbox{
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.link-modal:hover,
+.link-modal:focus{
+  color: var(--button-color) ;
+}
+.link-modal{
+  transition: color var(--transition);
+}
+ .button-send{
+  font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: var(--primary-background);
+    background-color: var(--iris);
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    transition: background-color var(--transition);
+ }
+ .button-send:focus,
+ .button-send:hover{
+  background-color: var(--hover-focus);
+ }
