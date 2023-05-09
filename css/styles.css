@@ -454,7 +454,6 @@ border-color: var(--hover-focus);}
   outline: none;
 }
 .subscribe-button{
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -468,6 +467,7 @@ border-color: var(--hover-focus);}
   align-items: center;
   gap: 16px;
   transition: background-colol var(--transition);
+  border: none;
 }
 .subscribe-button:hover,
 .subscribe-button:focus{
@@ -630,12 +630,13 @@ border-color: var(--hover-focus);}
 .modal-close-btm:focus>.modal-icon {
   fill: var(--primary-background);
 }
-.backdrop.is-hidden{
+.is-hidden{
   visibility:hidden;
   opacity: 0;
   pointer-events: none;
 }
 .wrap-modal-icon{
+  display: block;
   position: relative;
 }
 .icon-contact{
@@ -649,7 +650,6 @@ border-color: var(--hover-focus);}
   flex-direction: column;
 }
 .title-modal{
-  font-family: 'Roboto',sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;  
@@ -659,7 +659,6 @@ border-color: var(--hover-focus);}
 }
 .text-modal{
   display: block;
-  font-family: 'Roboto',sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -699,7 +698,6 @@ border-color: var(--hover-focus);}
  outline: none;
 }
 .modal-form-message::placeholder{
-  font-family: 'Roboto',sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -718,7 +716,6 @@ border-color: var(--hover-focus);}
 }
 .modal-checkbox{
   position: relative;
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -738,11 +735,12 @@ border-color: var(--hover-focus);}
 .hidden-checkbox:focus+.modal-checkbox::before{
   background-color: var(--iris);
 }
-.hidden-checkbox{
+.hidden-checkbox{ 
   width: 1px;
   height: 1px;
   opacity: 0;
   pointer-events: none;
+  
 }
 .link-modal:hover,
 .link-modal:focus{
@@ -752,7 +750,6 @@ border-color: var(--hover-focus);}
   transition: color var(--transition);
 }
  .button-send{
-  font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
