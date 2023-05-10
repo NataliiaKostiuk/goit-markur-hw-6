@@ -374,7 +374,6 @@ border-color: var(--hover-focus);}
   color: var(--secondary-background);
 }
 .footer {
-  max-width: 1440px;
   background: var(--secondary-color);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -585,7 +584,7 @@ border-color: var(--hover-focus);}
 }
 .modal-window{
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background-color: var(--background-modal);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px
@@ -641,13 +640,12 @@ border-color: var(--hover-focus);}
 }
 .icon-contact{
   position: absolute;
-  left: 16px;
-  top: 8px;
+  top:50%;
+  left:19px;
+  transform: translate(-50% ,-50%);
 }
 .modal-form{
-  padding: 70px 24px;
-  display: flex;
-  flex-direction: column;
+  padding: 72px 24px;
 }
 .title-modal{
     font-weight: 500;
@@ -664,6 +662,7 @@ border-color: var(--hover-focus);}
     line-height: 1.17;
     letter-spacing: 0.04em;
     color:var(--icon-color);
+    margin-bottom: 4px;
 }
 .modal-form-input{
   width: 100%;
@@ -722,13 +721,14 @@ border-color: var(--hover-focus);}
   letter-spacing: 0.04em;
   color:  var(--icon-color);
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 24px;
 }
 .icon-agree{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 4px;
+  transform: translate(-50% -50%);
   fill: var(--primary-background);
   transition: fill var(--transition);
 }
@@ -744,16 +744,19 @@ border-color: var(--hover-focus);}
 }
 .link-modal:hover,
 .link-modal:focus{
-  color: var(--button-color) ;
+  color: var(--hover-focus) ;
 }
 .link-modal{
   transition: color var(--transition);
+  color: var(--iris);
 }
  .button-send{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
     align-self: center;
