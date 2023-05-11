@@ -664,10 +664,12 @@ border-color: var(--hover-focus);}
     color:var(--icon-color);
     margin-bottom: 4px;
 }
+.modal-active-field{
+  margin-bottom: 80px;
+}
 .modal-form-input{
   width: 100%;
   padding: 8px 38px;
-  margin-bottom: 8px;
   transition: border-color var(--transition);
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
