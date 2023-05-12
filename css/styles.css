@@ -645,7 +645,7 @@ border-color: var(--hover-focus);}
   transform: translate(-50% ,-50%);
 }
 .modal-form{
-  padding: 72px 24px;
+  padding: 72px 24px 24px;
 }
 .title-modal{
     font-weight: 500;
@@ -665,7 +665,8 @@ border-color: var(--hover-focus);}
     margin-bottom: 4px;
 }
 .modal-active-field{
-  margin-bottom: 80px;
+  display: block;
+  margin-bottom: 8px;
 }
 .modal-form-input{
   width: 100%;
@@ -728,8 +729,8 @@ border-color: var(--hover-focus);}
 }
 .icon-agree{
   position: absolute;
-  top: 5px;
-  left: 4px;
+  top: 4px;
+  left: 3px; ; 
   transform: translate(-50% -50%);
   fill: var(--primary-background);
   transition: fill var(--transition);
